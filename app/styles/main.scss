@@ -69,6 +69,7 @@ img {
 }
 
 .mob-content,
+.mob-only-content,
 .tab-hide {
   display: none;
 }
@@ -276,8 +277,13 @@ $heading-array:
   box-shadow: none;
   padding: 20px 0;
 
-  &.no-padd--top {
+  &:first-child {
     padding-top: 0;
+  }
+
+  &.desk-bdr-pad {
+    border-top: solid 1px #ccc;
+    padding-top: 20px;
   }
 
   .card--content {
@@ -293,7 +299,7 @@ $heading-array:
   .card--no-bg {
     border-bottom: 1px solid $grey6;
 
-    &.no-bdr--btm {
+    &:last-child {
       border-bottom: 0;
     }
   }
@@ -355,13 +361,13 @@ $heading-array:
 .card--sec3 {
   .news--title {
     font-size: 20px;
-    margin: 10px 0;
+    margin: 0px 0 10px;
   }
-  .card:first-child {
-    .news--title {
-      margin-top: 0;
-    }
-  }
+  // .card:first-child {
+  //   .news--title {
+  //     margin-top: 0;
+  //   }
+  // }
 }
 
 @include media-custom-max(1024px) {
@@ -395,7 +401,7 @@ $heading-array:
   }
 
   .card--no-bg {
-    padding: 0;
+    padding: 10px 0px;
 
     .news--title {
       display: -webkit-box;
@@ -403,6 +409,11 @@ $heading-array:
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    &.desk-bdr-pad {
+      border-top: 0;
+      padding-top: 0;
     }
   }
 
@@ -427,6 +438,16 @@ $heading-array:
 @include media-custom-max(500px) {
   .mob--ver {
     flex-direction: column;
+  }
+
+  .card--no-bg {
+    &.desk-bdr-pad {
+      border-top: solid 1px #ccc;
+
+      .news--title {
+        margin-top: 0;
+      }
+    }
   }
 }
 // Card Configs End
