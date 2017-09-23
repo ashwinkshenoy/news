@@ -69,13 +69,13 @@ img {
 }
 
 .mob-content,
-.mob-only-content,
-.tab-hide {
+.mob-only-content {
   display: none;
 }
 
-@include media-custom-max(1024px) {
-  .desktop-content {
+@include media-custom-max(992px) {
+  .desktop-content,
+  .tab-hide {
     display: none;
   }
 
@@ -85,7 +85,8 @@ img {
 }
 
 @include media-custom-max(500px) {
-  .mob-only-content {
+  .mob-only-content,
+  .tab-hide {
     display: block;
   }
 
@@ -528,7 +529,7 @@ $heading-array:
   }
 }
 
-@include media-custom-min(1024px) {
+@include media-custom-min(1200px) {
   .news-slider {
     width: 1170px;
     margin: 0 auto;
