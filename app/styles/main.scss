@@ -276,7 +276,7 @@ $heading-array:
   box-shadow: none;
   padding: 20px 0;
 
-  &:first-child {
+  &.no-padd--top {
     padding-top: 0;
   }
 
@@ -293,7 +293,7 @@ $heading-array:
   .card--no-bg {
     border-bottom: 1px solid $grey6;
 
-    &:last-child {
+    &.no-bdr--btm {
       border-bottom: 0;
     }
   }

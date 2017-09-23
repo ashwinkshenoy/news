@@ -23,5 +23,9 @@
     margin-top: 3px;
     width: 25px;
   }
+
+  @include media-custom-max(500px) {
+    zoom: 0.8;
+  }
 }
 // Header End
