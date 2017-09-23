@@ -89,7 +89,7 @@
               <div class="col-xs-1">
                 <img src="images/icons/menu.svg" alt="menu" class="header--menu">
               </div>
-              <div class="col-xs-10">
+              <div class="col-xs-8">
                 <div class="header--brand">Quintype</div>
               </div>
             </div>
@@ -105,9 +105,10 @@
     <div class="container">
 
       <!-- Main Card -->
-      <div class="card card--hor">
+      <div class="card card--hor mob--ver">
         <div class="card--img">
-          <img src="images/posters/1.jpg" alt="card-img" class="img-responsive">
+          <img src="images/posters/1.jpg" alt="card-img" class="desktop-content img-responsive">
+          <img src="images/posters/1a.jpg" alt="card-img" class="mob-content img-responsive">
         </div>
         <div class="card--content">
           <span class="heading--yellow">Science</span>
@@ -131,7 +132,7 @@
       <div class="content--space"></div>
 
       <div class="row">
-        <div class="col-sm-4 col-mgbtm">
+        <div class="col-sm-6 col-md-4 col-mgbtm">
           <div class="card card--ver card--small">
             <div class="card--img">
               <img src="images/posters/1.jpg" alt="card-img" class="img-responsive">
@@ -152,7 +153,7 @@
             </div>
           </div>
         </div><!--col-sm-* end-->
-        <div class="col-sm-4 col-mgbtm card--btm-bdr">
+        <div class="col-sm-6 col-md-4 col-mgbtm card--btm-bdr">
           <div class="card card--ver card--small card--no-bg">
             <div class="card--content">
               <span class="heading--lblue">Travel</span>
@@ -193,9 +194,9 @@
             </div>
           </div>
         </div><!--col-sm-* end-->
-        <div class="col-sm-4">
-          <img src="images/posters/quint.png" alt="quint-subscribe" class="img-responsive">
-          <div class="q-mail text-center">
+        <div class="col-sm-12 col-md-4">
+          <img src="images/posters/quint.png" alt="quint-subscribe" class="img-responsive desktop-content">
+          <div class="q-mail text-center mob-only-content tab-hide">
             <img src="images/icons/message.png" alt="mail-icon" class="mail--icon">
             <div class="mail--title">Subscribe to Newsletter</div>
             <input type="text" class="form-control in--txt" placeholder="Your email">
@@ -205,30 +206,32 @@
       </div>
 
       <div class="content--space"></div>
+    </div><!--container end-->
 
-      <div class="news-slider">
-        <div>
-          <div class="news--bg text-center" style="background-image: url(images/posters/walk.jpg)">
-            <div class="news--title">Must Reads</div>
-            <div class="news--desc">
-              Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain of a virus’
-            </div>
-            <button class="btn white-btn">READ STORY</button>
+    <div class="news-slider">
+      <div>
+        <div class="news--bg text-center" style="background-image: url(images/posters/walk.jpg)">
+          <div class="news--title">Must Reads</div>
+          <div class="news--desc">
+            Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain of a virus’
           </div>
-        </div>
-        <div>
-          <div class="news--bg text-center" style="background-image: url(images/posters/walk.jpg)">
-            <div class="news--title">Must Reads</div>
-            <div class="news--desc">
-              Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain of a virus’
-            </div>
-            <button class="btn white-btn">READ STORY</button>
-          </div>
+          <button class="btn white-btn">READ STORY</button>
         </div>
       </div>
+      <div>
+        <div class="news--bg text-center" style="background-image: url(images/posters/walk.jpg)">
+          <div class="news--title">Must Reads</div>
+          <div class="news--desc">
+            Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain of a virus’
+          </div>
+          <button class="btn white-btn">READ STORY</button>
+        </div>
+      </div>
+    </div>
 
-      <div class="content--space"></div>
+    <div class="content--space"></div>
 
+    <div class="container">
       <div class="heading">
         <span class="heading--dblue hd--big">Politics</span>
       </div>
@@ -236,7 +239,7 @@
       <br><br>
 
       <div class="row">
-        <div class="col-sm-4 col-mgbtm">
+        <div class="col-sm-6 col-md-4 col-mgbtm">
           <div class="card-2">
             <div class="card--img" style="background-image: url(images/posters/trump.jpg)"></div>
             <!-- <img src="images/posters/trump.jpg" alt="poster" class="card--img"> -->
@@ -252,7 +255,7 @@
             </div>
           </div>
         </div><!--col-sm-* end-->
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-md-4">
           <div class="card card--ver card--small card-3">
             <div class="card--img">
               <img src="images/posters/2.jpg" alt="card-img" class="img-responsive">
@@ -281,57 +284,68 @@
             </div>
           </div>
         </div><!--col-sm-* end-->
-        <div class="col-sm-4 col-mgbtm card--sec3 card--btm-bdr">
-          <div class="card card--ver card--small card--no-bg">
-            <div class="card--content">
-              <div class="news--title">
-                Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G Service
-              </div>
-              <div class="author">
-                <div class="author--content">
-                  <div class="author--name">Alex Parkinson</div>
+        <div class="col-sm-12 col-md-4 card--sec3 card--btm-bdr">
+          <div class="row">
+            <div class="col-sm-6 col-md-12">
+              <div class="card card--ver card--small card--no-bg">
+                <div class="card--content">
+                  <div class="news--title">
+                    Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G Service
+                  </div>
+                  <div class="author">
+                    <div class="author--content">
+                      <div class="author--name">Alex Parkinson</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="card card--ver card--small card--no-bg">
-            <div class="card--content">
-              <div class="news--title">
-                Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low
-              </div>
-              <div class="author">
-                <div class="author--content">
-                  <div class="author--name">Alice Doe</div>
+              <div class="card card--ver card--small card--no-bg">
+                <div class="card--content">
+                  <div class="news--title">
+                    Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low
+                  </div>
+                  <div class="author">
+                    <div class="author--content">
+                      <div class="author--name">Alice Doe</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="card card--ver card--small card--no-bg">
-            <div class="card--content">
-              <div class="news--title">
-                Sundar Pichai Launches ‘Digital Unlocked’ Programme
-              </div>
-              <div class="author">
-                <div class="author--content">
-                  <div class="author--name">Jonnathan Doe</div>
+            </div><!--col-sx-* end-->
+            <div class="col-sm-6 col-md-12">
+              <div class="card card--ver card--small card--no-bg">
+                <div class="card--content">
+                  <div class="news--title">
+                    Sundar Pichai Launches ‘Digital Unlocked’ Programme
+                  </div>
+                  <div class="author">
+                    <div class="author--content">
+                      <div class="author--name">Jonnathan Doe</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="card card--ver card--small card--no-bg">
-            <div class="card--content">
-              <div class="news--title">
-                Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low
-              </div>
-              <div class="author">
-                <div class="author--content">
-                  <div class="author--name">Jonnathan Doe</div>
+              <div class="card card--ver card--small card--no-bg">
+                <div class="card--content">
+                  <div class="news--title">
+                    Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near 2.5-Year Low
+                  </div>
+                  <div class="author">
+                    <div class="author--content">
+                      <div class="author--name">Jonnathan Doe</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><!--col-sx-* end-->
+          </div><!--inner row-->
         </div><!--col-sm-* end-->
       </div><!--row end-->
+
+      <div class="read-more mob-only-content text-right">
+        <span>Read more</span>
+        <img src="images/icons/arrow-right2.png" alt="arrow-right">
+      </div>
 
       <div class="content--space"></div>
 
@@ -345,7 +359,7 @@
         <div class="col-sm-6 col-mgbtm">
           <div class="card card--hor card--small">
             <div class="card--img">
-              <img src="images/posters/1.jpg" alt="card-img" class="img-responsive">
+              <img src="images/posters/5.jpg" alt="card-img" class="img-responsive">
             </div>
             <div class="card--content">
               <div class="news--title">
@@ -361,7 +375,7 @@
           <div class="content--space2"></div>
           <div class="card card--hor card--small">
             <div class="card--img">
-              <img src="images/posters/1.jpg" alt="card-img" class="img-responsive">
+              <img src="images/posters/6.jpg" alt="card-img" class="img-responsive">
             </div>
             <div class="card--content">
               <div class="news--title">
@@ -392,9 +406,9 @@
           </div>
         </div><!--col-sm-* end-->
         <div class="col-sm-6">
-          <div class="card card--ver card--small">
+          <div class="card card--ver card--small mob--card">
             <div class="card--img">
-              <img src="images/posters/1.jpg" alt="card-img" class="img-responsive">
+              <img src="images/posters/7.jpg" alt="card-img" class="img-responsive">
             </div>
             <div class="card--content">
               <div class="news--title">
@@ -424,10 +438,10 @@
         <br><br>
 
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-sm-12 col-md-8 mob--card2">
             <div class="card card--hor card--small card--no-bg">
               <div class="card--img">
-                <img src="images/posters/1.jpg" alt="card-img" class="img-responsive">
+                <img src="images/posters/3.jpg" alt="card-img" class="img-responsive">
               </div>
               <div class="card--content">
                 <span class="heading--pink">HEALTH & FITNESS</span>
@@ -444,7 +458,7 @@
             </div>
             <div class="card card--hor card--small card--no-bg">
               <div class="card--img">
-                <img src="images/posters/1.jpg" alt="card-img" class="img-responsive">
+                <img src="images/posters/4.jpg" alt="card-img" class="img-responsive">
               </div>
               <div class="card--content">
                 <span class="heading--pink">HEALTH & FITNESS</span>
@@ -479,15 +493,46 @@
           </div><!--col-sm-* end-->
         </div><!--row end-->
       </div><!--container end-->
-    </div>
+    </div><!--bg--white end-->
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 mob-center col-mgbtm">
+            <img src="images/icons/logo-white.svg" alt="logo-white">
+          </div><!--col-sm-* end-->
+          <div class="col-sm-6 text-right mob-center">
+            <div class="foo--links">
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Terms & Conditions</a>
+                </li>
+              </ul>
+            </div>
+            <br>
+            <div>
+              Copyright 2016 ©
+              <br>
+              <b>Powered by Quintype</b>
+            </div>
+          </div><!--col-sm-* end-->
+        </div><!--row end-->
+      </div><!--container end-->
+    </footer>
 
 
 
 
 
-
-
-    <br><br><br><br><br>
     <!-- Google Analytics if Required -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!-- <script>
