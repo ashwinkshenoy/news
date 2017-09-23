@@ -25,4 +25,4 @@ do `bower install`
 
 Demo
 
-http://ashwinshenoy.com/buyblue
+http://ashwinshenoy.com/news
