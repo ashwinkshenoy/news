@@ -8,15 +8,18 @@
 
   .header--menu {
     cursor: pointer;
+    display: inline-block;
     height: 30px;
     width: 30px;
   }
 
   .header--brand {
+    display: inline-block;
     font-size: 25px;
     font-weight: 600;
     margin-top: -3px;
     margin-left: 10px;
+    vertical-align: middle;
   }
 
   .header--search {
