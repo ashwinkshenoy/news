@@ -1,9 +1,10 @@
 $(document).ready(function(){
+  // Slick Slider
   $('.news-slider').slick();
 
   // Search
   $('#search-icon').bind('click', function() {
-    $('.search').show();
+    $('.search').toggle();
   });
 
   $('#search-close').bind('click', function() {

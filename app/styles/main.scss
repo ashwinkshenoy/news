@@ -3,12 +3,12 @@
 $icon-font-path: '../fonts/';
 $slick-font-path: '/bower_components/slick-carousel/slick/fonts/';
 $slick-loader-path: '/bower_components/slick-carousel/slick/';
+$slick-loader-path: '';
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
 // bower:scss
 @import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-@import 'bower_components/font-awesome/scss/font-awesome.scss';
 // endbower
 
 @import '_colors.scss';

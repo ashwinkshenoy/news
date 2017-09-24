@@ -1,28 +1,23 @@
-#BuyBlue Landing Page
+# NewsApp UI
+---
 
-###Installation
-
+##### Installation
 Initial yeoman setup
 `npm install --global yo gulp-cli bower generator-webapp`
-
 Do `npm install`
-
 If bower components do not get installed,
 do `bower install`
 
-###To run the project
-
+##### To run the project
 `gulp serve`
 
-###To build the project
-
+##### To build the project
 `gulp`
 
-###To run built project
-
+#### To run built project
 `gulp serve:dist`
 
+Check out the [Demo](http://ashwinkshenoy.com/news)
 
-Demo
 
-http://ashwinshenoy.com/news
+Do Let me know your thoughts on the NewsApp UI :)
