@@ -16,7 +16,7 @@ do `bower install`
 #### To run built project
 `gulp serve:dist`
 
-Check out the [Demo](http://ashwinkshenoy.com/news)
+Check out the [Demo](http://ashwinshenoy.com/news)
 
 
 Do Let me know your thoughts on the NewsApp UI :)
