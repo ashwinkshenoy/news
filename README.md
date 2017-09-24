@@ -3,7 +3,9 @@
 #### Installation
 Initial yeoman setup
 `npm install --global yo gulp-cli bower generator-webapp`
+
 Do `npm install`
+
 If bower components do not get installed,
 do `bower install`
 
