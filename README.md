@@ -22,3 +22,9 @@ Check out the [Demo](http://ashwinshenoy.com/news)
 
 
 Do Let me know your thoughts on the NewsApp UI :)
+
+Bower:
+
+Bootstrap,
+
+Slick Slider
