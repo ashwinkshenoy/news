@@ -19,8 +19,8 @@ $slick-loader-path: '';
 
 // General
 body {
-  font-family: 'Lato', sans-serif;
   background: $grey4;
+  font-family: 'Lato', sans-serif;
 }
 
 .body-scroll {
@@ -102,8 +102,8 @@ img {
 
 // Card
 .card {
-  background: $white;
   @include box-shadow(0, 2px, 10px, 0, rgba(0, 0, 0, 0.1));
+  background: $white;
   display: flex;
 
   .card--img,
@@ -127,16 +127,17 @@ img {
 
 // Headings
 %heading-default {
-  text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
   position: relative;
+  text-transform: uppercase;
+
   &:before {
     content: '';
-    position: absolute;
     height: 3px;
-    width: 90%;
     margin-top: 30px;
+    position: absolute;
+    width: 90%;
   }
 }
 
@@ -150,12 +151,15 @@ $heading-array:
 @each $heading in $heading-array {
   .heading--#{nth($heading, 1)} {
     @extend %heading-default;
+
     &:before {
-      background: #{nth($heading, 2)}
+      background: #{nth($heading, 2)};
     }
+
     &.hd--big {
       font-size: 30px;
       text-transform: capitalize;
+
       &:before {
         margin-top: 50px;
       }
@@ -170,18 +174,19 @@ $heading-array:
 }
 
 .news--desc {
-  font-size: 18px;
-  line-height: 1.56;
   color: #5c5c5c;
+  font-size: 18px;
   font-weight: 400;
-  text-overflow: ellipsis;
+  line-height: 1.56;
   position: relative;
+  text-overflow: ellipsis;
 }
 
 @include media-custom-max(1024px) {
   @each $heading in $heading-array {
     .heading--#{nth($heading, 1)} {
       font-size: 12px;
+
       &:before {
         margin-top: 20px;
       }
@@ -257,6 +262,7 @@ $heading-array:
   @each $heading in $heading-array {
     .heading--#{nth($heading, 1)} {
       font-size: 14px;
+
       &:before {
         margin-top: 20px;
       }
@@ -267,6 +273,7 @@ $heading-array:
     .card--content {
       padding: 10px 20px;
     }
+
     .news--title {
       font-size: 20px;
     }
@@ -283,7 +290,7 @@ $heading-array:
   }
 
   &.desk-bdr-pad {
-    border-top: solid 1px #ccc;
+    border-top: solid 1px $grey1;
     padding-top: 20px;
   }
 
@@ -307,8 +314,8 @@ $heading-array:
 }
 
 .card-2 {
-  background-color: $white;
   background-clip: border-box;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -316,8 +323,8 @@ $heading-array:
   word-wrap: break-word;
 
   .card--img {
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     display: block;
     height: 600px;
     width: 100%;
@@ -346,6 +353,7 @@ $heading-array:
 
 .card-3 {
   margin-bottom: 30px;
+
   .card--content {
     padding: 20px;
 
@@ -362,8 +370,9 @@ $heading-array:
 .card--sec3 {
   .news--title {
     font-size: 20px;
-    margin: 0px 0 10px;
+    margin: 0 0 10px;
   }
+
   // .card:first-child {
   //   .news--title {
   //     margin-top: 0;
@@ -402,12 +411,12 @@ $heading-array:
   }
 
   .card--no-bg {
-    padding: 10px 0px;
+    padding: 10px 0;
 
     .news--title {
+      -webkit-box-orient: vertical;
       display: -webkit-box;
       -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
     }
@@ -443,7 +452,7 @@ $heading-array:
 
   .card--no-bg {
     &.desk-bdr-pad {
-      border-top: solid 1px #ccc;
+      border-top: solid 1px $grey1;
 
       .news--title {
         margin-top: 0;
@@ -460,8 +469,8 @@ $heading-array:
   padding: 50px 30px;
 
   .mail--icon {
-    width: 30px;
     height: 30px;
+    width: 30px;
   }
 
   .mail--title {
@@ -472,10 +481,10 @@ $heading-array:
   }
 
   .in--txt {
-    border-radius: 4px;
     border: 0;
-    outline: 0;
+    border-radius: 4px;
     margin-bottom: 25px;
+    outline: 0;
   }
 }
 // Mail Box End
@@ -498,8 +507,8 @@ $heading-array:
     font-size: 40px;
     font-weight: 400;
     line-height: 1.32;
-    margin-top: 40px;
     margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .white-btn {
@@ -507,10 +516,11 @@ $heading-array:
   }
 
   %slick-nav {
-    z-index: 10;
-    width: 50px;
-    height: 50px;
     background-size: cover !important;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+
     &:before {
       content: none;
     }
@@ -518,23 +528,23 @@ $heading-array:
 
   .slick-prev {
     @extend %slick-nav;
+    background: url('../images/icons/left-arrow.png');
     left: 25px;
-    background: url(../images/icons/left-arrow.png);
   }
 
   .slick-next {
     @extend %slick-nav;
+    background: url('../images/icons/right-arrow.png');
     right: 25px;
-    background: url(../images/icons/right-arrow.png);
   }
 }
 
 @include media-custom-min(1200px) {
   .news-slider {
-    width: 1170px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: 1170px;
   }
 }
 
@@ -559,6 +569,7 @@ $heading-array:
     .news--desc {
       font-size: 20px;
     }
+
     %slick-nav {
       height: 30px;
       width: 30px;
@@ -586,8 +597,8 @@ $heading-array:
       }
 
       .news--title {
-        margin-top: 20px;
         font-size: 22px;
+        margin-top: 20px;
       }
 
       .author {
@@ -614,8 +625,8 @@ $heading-array:
       }
 
       .news--title {
-        margin-top: 10px;
         font-size: 12px;
+        margin-top: 10px;
       }
 
       .author {
